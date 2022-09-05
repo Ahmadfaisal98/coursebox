@@ -78,7 +78,7 @@ const Header: FC<HeaderProps> = ({ children, href, target = "_blank" }) => (
     <h1 className={styles.title}>
       Welcome to{" "}
       <a href={href} target={target}>
-        Next.js!
+        Next.js!!
       </a>
     </h1>
     {children}

@@ -1,6 +1,7 @@
 import type { NextPage } from "next";
 import Head from "next/head";
 import Image from "next/image";
+import { FC } from "react";
 import styles from "../styles/Home.module.css";
 
 const Home: NextPage = () => {
@@ -13,14 +14,12 @@ const Home: NextPage = () => {
       </Head>
 
       <main className={styles.main}>
-        <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Next.js!!!</a>
-        </h1>
-
-        <p className={styles.description}>
-          Get started by editing{" "}
-          <code className={styles.code}>pages/index.tsx</code>
-        </p>
+        <Header href="https://nextjs.org/docs" target="_blank">
+          <p className={styles.description}>
+            Get started by editing{" "}
+            <code className={styles.code}>pages/index.tsx</code>
+          </p>
+        </Header>
 
         <div className={styles.grid}>
           <a href="https://nextjs.org/docs" className={styles.card}>
@@ -68,5 +67,22 @@ const Home: NextPage = () => {
     </div>
   );
 };
+
+interface HeaderProps {
+  href: string;
+  target?: "_blank" | "_self" | "_parent" | "_top";
+}
+
+const Header: FC<HeaderProps> = ({ children, href, target = "_blank" }) => (
+  <header>
+    <h1 className={styles.title}>
+      Welcome to{" "}
+      <a href={href} target={target}>
+        Next.js!!!
+      </a>
+    </h1>
+    {children}
+  </header>
+);
 
 export default Home;

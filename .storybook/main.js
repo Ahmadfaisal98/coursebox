@@ -1,7 +1,7 @@
 module.exports = {
   "stories": [
     "../pages/**/*.stories.mdx",
-    "../pages/**/*.storiess.@(js|jsx|ts|tsx)",
+    "../pages/**/*.stories.@(js|jsx|ts|tsx)",
     "../components/**/*.stories.mdx",
     "../components/**/*.stories.@(js|jsx|ts|tsx)"
   ],
@@ -13,5 +13,9 @@ module.exports = {
   "framework": "@storybook/react",
   "core": {
     "builder": "@storybook/builder-webpack5"
-  }
+  },
+  // https://github.com/storybookjs/storybook/issues/10231
+  "features": {
+    "emotionAlias": false,
+  },
 }

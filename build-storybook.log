@@ -1,8 +1,8 @@
 info @storybook/react v6.5.10
 info 
-info => Cleaning outputDir: C:\\Users\\qosin\\AppData\\Local\\Temp\\chromatic--99644-tM9cG3tgmbFG
+info => Cleaning outputDir: C:\\Users\\qosin\\AppData\\Local\\Temp\\chromatic--144052-WTfGYh4ms5Og
 info => Loading presets
-info => Copying static files: E:\Small Project\next-project\public at C:\Users\qosin\AppData\Local\Temp\chromatic--99644-tM9cG3tgmbFG\
+info => Copying static files: E:\Small Project\next-project\public at C:\Users\qosin\AppData\Local\Temp\chromatic--144052-WTfGYh4ms5Og\
 info => Compiling manager..
 info => Compiling preview..
 info Addon-docs: using MDX1
@@ -119,74 +119,65 @@ info => Using default Webpack5 setup
 <s> [webpack.Progress] 9% setup compilation
 <s> [webpack.Progress] 10% building
 <s> [webpack.Progress] 10% building 0/1 entries 0/0 dependencies 0/0 modules
-<s> [webpack.Progress] 10% building 0/15 entries 1/15 dependencies 0/0 modules
+<s> [webpack.Progress] 10% building 0/15 entries 15/21 dependencies 0/13 modules
 <s> [webpack.Progress] 10% building import loader ./node_modules/babel-loader/lib/index.js
-<s> [webpack.Progress] 10% building 0/15 entries 16/21 dependencies 0/15 modules
-<s> [webpack.Progress] 10% building 0/15 entries 16/22 dependencies 0/15 modules
+<s> [webpack.Progress] 10% building 0/15 entries 16/37 dependencies 0/15 modules
+<s> [webpack.Progress] 10% building 0/15 entries 16/37 dependencies 1/15 modules
 <s> [webpack.Progress] 10% building import loader ./node_modules/@storybook/source-loader/dist/cjs/index.js
 <s> [webpack.Progress] 10% building 0/15 entries 22/59 dependencies 2/21 modules
-<s> [webpack.Progress] 10% building 0/15 entries 33/99 dependencies 2/30 modules
-<s> [webpack.Progress] 10% building 0/15 entries 45/103 dependencies 2/41 modules
-<s> [webpack.Progress] 10% building 0/15 entries 84/200 dependencies 2/65 modules
-<s> [webpack.Progress] 10% building 0/15 entries 121/283 dependencies 5/100 modules
-<s> [webpack.Progress] 10% building 0/15 entries 236/300 dependencies 5/139 modules
-<s> [webpack.Progress] 10% building 0/15 entries 300/525 dependencies 7/158 modules
-<s> [webpack.Progress] 13% building 1/15 entries 306/525 dependencies 9/163 modules
-<s> [webpack.Progress] 13% building 1/15 entries 394/525 dependencies 10/189 modules
+<s> [webpack.Progress] 10% building 0/15 entries 34/99 dependencies 2/30 modules
+<s> [webpack.Progress] 10% building 0/15 entries 86/200 dependencies 2/68 modules
+<s> [webpack.Progress] 10% building 0/15 entries 200/283 dependencies 5/120 modules
+<s> [webpack.Progress] 10% building 0/15 entries 259/566 dependencies 8/147 modules
+<s> [webpack.Progress] 13% building 1/15 entries 450/570 dependencies 11/209 modules
+<s> [webpack.Progress] 13% building 1/15 entries 556/800 dependencies 18/255 modules
+<s> [webpack.Progress] 13% building 1/15 entries 752/884 dependencies 23/300 modules
 <s> [webpack.Progress] 13% building import loader ./node_modules/style-loader/dist/cjs.js
 <s> [webpack.Progress] 13% building import loader ./node_modules/css-loader/dist/cjs.js
-<s> [webpack.Progress] 13% building 1/15 entries 480/527 dependencies 13/242 modules
-<s> [webpack.Progress] 13% building 1/15 entries 533/640 dependencies 17/252 modules
-<s> [webpack.Progress] 13% building 1/15 entries 557/800 dependencies 17/253 modules
-<s> [webpack.Progress] 13% building 1/15 entries 646/822 dependencies 21/269 modules
-<s> [webpack.Progress] 13% building 1/15 entries 787/835 dependencies 27/313 modules
-<s> [webpack.Progress] 13% building 1/15 entries 795/900 dependencies 27/313 modules
-<s> [webpack.Progress] 13% building 1/15 entries 892/1026 dependencies 41/316 modules
-<s> [webpack.Progress] 13% building 1/15 entries 1010/1100 dependencies 55/339 modules
-<s> [webpack.Progress] 13% building 1/15 entries 1200/1432 dependencies 65/349 modules
-<s> [webpack.Progress] 13% building 1/15 entries 1399/1500 dependencies 94/379 modules
-<s> [webpack.Progress] 13% building 1/15 entries 1500/1572 dependencies 109/387 modules
-<s> [webpack.Progress] 13% building 1/15 entries 1575/1700 dependencies 154/407 modules
-<s> [webpack.Progress] 13% building 1/15 entries 1800/1838 dependencies 182/463 modules
-<s> [webpack.Progress] 13% building 1/15 entries 1900/2058 dependencies 196/469 modules
-<s> [webpack.Progress] 13% building 1/15 entries 2034/2300 dependencies 275/501 modules
-<s> [webpack.Progress] 13% building 1/15 entries 2279/2400 dependencies 291/514 modules
-<s> [webpack.Progress] 13% building 1/15 entries 2400/2559 dependencies 313/539 modules
-<s> [webpack.Progress] 13% building 1/15 entries 2537/2600 dependencies 313/598 modules
-<s> [webpack.Progress] 13% building 1/15 entries 2674/3000 dependencies 332/610 modules
-<s> [webpack.Progress] 14% building 1/15 entries 2994/3100 dependencies 373/687 modules
-<s> [webpack.Progress] 14% building 1/15 entries 3177/3300 dependencies 379/727 modules
-<s> [webpack.Progress] 14% building 1/15 entries 3233/3600 dependencies 392/727 modules
-<s> [webpack.Progress] 14% building 1/15 entries 3634/3800 dependencies 429/770 modules
-<s> [webpack.Progress] 14% building 1/15 entries 3769/3900 dependencies 443/806 modules
-<s> [webpack.Progress] 15% building 1/15 entries 4200/4254 dependencies 522/896 modules
-<s> [webpack.Progress] 16% building 1/15 entries 4310/4500 dependencies 566/926 modules
-<s> [webpack.Progress] 17% building 1/15 entries 4639/4700 dependencies 683/982 modules
-<s> [webpack.Progress] 17% building 1/15 entries 4671/4800 dependencies 685/1007 modules
-<s> [webpack.Progress] 18% building 1/15 entries 4956/5000 dependencies 750/1052 modules
-<s> [webpack.Progress] 18% building 1/15 entries 5000/5059 dependencies 776/1060 modules
-<s> [webpack.Progress] 18% building 1/15 entries 5000/5100 dependencies 784/1060 modules
-<s> [webpack.Progress] 19% building 1/15 entries 5100/5139 dependencies 870/1077 modules
-<s> [webpack.Progress] 19% building 1/15 entries 5134/5200 dependencies 870/1086 modules
-<s> [webpack.Progress] 19% building 1/15 entries 5155/5400 dependencies 888/1098 modules
-<s> [webpack.Progress] 20% building 1/15 entries 5382/5500 dependencies 913/1254 modules
-<s> [webpack.Progress] 20% building 1/15 entries 5400/5678 dependencies 915/1267 modules
-<s> [webpack.Progress] 20% building 1/15 entries 5667/5700 dependencies 991/1411 modules
-<s> [webpack.Progress] 21% building 1/15 entries 5781/5800 dependencies 1069/1426 modules
-<s> [webpack.Progress] 22% building 1/15 entries 5848/5900 dependencies 1180/1437 modules
-<s> [webpack.Progress] 23% building 1/15 entries 6000/6073 dependencies 1263/1458 modules
-<s> [webpack.Progress] 24% building 2/15 entries 6129/6155 dependencies 1329/1469 modules
-<s> [webpack.Progress] 24% building 3/15 entries 6129/6155 dependencies 1330/1469 modules
-<s> [webpack.Progress] 24% building 4/15 entries 6129/6155 dependencies 1331/1469 modules
-<s> [webpack.Progress] 28% building 5/15 entries 6129/6155 dependencies 1332/1469 modules
-<s> [webpack.Progress] 32% building 6/15 entries 6129/6155 dependencies 1333/1469 modules
-<s> [webpack.Progress] 35% building 7/15 entries 6129/6155 dependencies 1334/1469 modules
-<s> [webpack.Progress] 39% building 8/15 entries 6129/6155 dependencies 1335/1469 modules
-<s> [webpack.Progress] 43% building 9/15 entries 6129/6155 dependencies 1336/1469 modules
-<s> [webpack.Progress] 46% building 10/15 entries 6129/6155 dependencies 1341/1469 modules
-<s> [webpack.Progress] 46% building 10/15 entries 6462/6500 dependencies 1444/1534 modules
-<s> [webpack.Progress] 50% building 11/15 entries 6518/6534 dependencies 1480/1536 modules
-<s> [webpack.Progress] 53% building 12/15 entries 6518/6534 dependencies 1481/1536 modules
+<s> [webpack.Progress] 13% building 1/15 entries 816/884 dependencies 26/308 modules
+<s> [webpack.Progress] 13% building 1/15 entries 1100/1253 dependencies 53/333 modules
+<s> [webpack.Progress] 13% building 1/15 entries 1221/1300 dependencies 54/347 modules
+<s> [webpack.Progress] 13% building 1/15 entries 1300/1433 dependencies 73/348 modules
+<s> [webpack.Progress] 13% building 1/15 entries 1400/1471 dependencies 86/372 modules
+<s> [webpack.Progress] 13% building 1/15 entries 1472/1600 dependencies 97/385 modules
+<s> [webpack.Progress] 13% building 1/15 entries 1580/1700 dependencies 146/417 modules
+<s> [webpack.Progress] 13% building 1/15 entries 1823/1900 dependencies 182/470 modules
+<s> [webpack.Progress] 13% building 1/15 entries 2000/2204 dependencies 241/485 modules
+<s> [webpack.Progress] 13% building 1/15 entries 2200/2380 dependencies 279/514 modules
+<s> [webpack.Progress] 13% building 1/15 entries 2325/2393 dependencies 300/517 modules
+<s> [webpack.Progress] 13% building 1/15 entries 2393/2600 dependencies 313/535 modules
+<s> [webpack.Progress] 13% building 1/15 entries 2600/2805 dependencies 319/605 modules
+<s> [webpack.Progress] 13% building 1/15 entries 2777/2900 dependencies 333/638 modules
+<s> [webpack.Progress] 14% building 1/15 entries 3143/3200 dependencies 391/712 modules
+<s> [webpack.Progress] 14% building 1/15 entries 3349/3400 dependencies 406/732 modules
+<s> [webpack.Progress] 14% building 1/15 entries 3410/3700 dependencies 416/732 modules
+<s> [webpack.Progress] 15% building 1/15 entries 3800/3954 dependencies 457/794 modules
+<s> [webpack.Progress] 15% building 1/15 entries 4093/4200 dependencies 493/881 modules
+<s> [webpack.Progress] 16% building 1/15 entries 4336/4400 dependencies 568/939 modules
+<s> [webpack.Progress] 17% building 1/15 entries 4600/4686 dependencies 674/970 modules
+<s> [webpack.Progress] 17% building 1/15 entries 4800/4861 dependencies 702/1025 modules
+<s> [webpack.Progress] 18% building 1/15 entries 5007/5050 dependencies 800/1061 modules
+<s> [webpack.Progress] 19% building 1/15 entries 5042/5100 dependencies 844/1062 modules
+<s> [webpack.Progress] 19% building 1/15 entries 5074/5300 dependencies 865/1080 modules
+<s> [webpack.Progress] 19% building 1/15 entries 5339/5400 dependencies 891/1240 modules
+<s> [webpack.Progress] 20% building 1/15 entries 5425/5600 dependencies 952/1256 modules
+<s> [webpack.Progress] 20% building 1/15 entries 5600/5637 dependencies 963/1398 modules
+<s> [webpack.Progress] 20% building 1/15 entries 5622/5700 dependencies 988/1400 modules
+<s> [webpack.Progress] 21% building 1/15 entries 5700/5773 dependencies 1048/1408 modules
+<s> [webpack.Progress] 22% building 1/15 entries 5831/5900 dependencies 1150/1437 modules
+<s> [webpack.Progress] 23% building 1/15 entries 6000/6029 dependencies 1262/1456 modules
+<s> [webpack.Progress] 24% building 2/15 entries 6110/6146 dependencies 1335/1460 modules
+<s> [webpack.Progress] 24% building 3/15 entries 6110/6146 dependencies 1335/1460 modules
+<s> [webpack.Progress] 24% building 4/15 entries 6110/6146 dependencies 1335/1460 modules
+<s> [webpack.Progress] 28% building 5/15 entries 6110/6146 dependencies 1335/1460 modules
+<s> [webpack.Progress] 31% building 6/15 entries 6110/6146 dependencies 1335/1460 modules
+<s> [webpack.Progress] 35% building 7/15 entries 6110/6146 dependencies 1335/1460 modules
+<s> [webpack.Progress] 39% building 8/15 entries 6110/6146 dependencies 1335/1460 modules
+<s> [webpack.Progress] 43% building 9/15 entries 6110/6146 dependencies 1335/1460 modules
+<s> [webpack.Progress] 46% building 10/15 entries 6110/6146 dependencies 1335/1460 modules
+<s> [webpack.Progress] 46% building 10/15 entries 6467/6500 dependencies 1445/1534 modules
+<s> [webpack.Progress] 50% building 11/15 entries 6523/6534 dependencies 1481/1534 modules
+<s> [webpack.Progress] 54% building 12/15 entries 6523/6534 dependencies 1482/1534 modules
 <s> [webpack.Progress] 57% building 13/15 entries 6566/6570 dependencies 1536/1551 modules
 <s> [webpack.Progress] 61% building 14/15 entries 6566/6570 dependencies 1536/1551 modules
 <s> [webpack.Progress] 65% building 15/15 entries 6576/6576 dependencies 1555/1555 modules
@@ -289,11 +280,11 @@ info => Using default Webpack5 setup
 <s> [webpack.Progress] 92% sealing asset processing
 <s> [webpack.Progress] 92% sealing asset processing PersistentChildCompilerSingletonPlugin
 <s> [webpack.Progress] 92% sealing asset processing TerserPlugin
-info => Manager built (1.7 min)
+info => Manager built (1.52 min)
 <s> [webpack.Progress] 92% sealing asset processing SourceMapDevToolPlugin
 <s> [webpack.Progress] 92% sealing asset processing SourceMapDevToolPlugin
-<s> [webpack.Progress] 92% sealing asset processing SourceMapDevToolPlugin main.17039bd3.iframe.bundle.js generate SourceMap
-<s> [webpack.Progress] 92% sealing asset processing SourceMapDevToolPlugin main.17039bd3.iframe.bundle.js generated SourceMap
+<s> [webpack.Progress] 92% sealing asset processing SourceMapDevToolPlugin main.2a314cd6.iframe.bundle.js generate SourceMap
+<s> [webpack.Progress] 92% sealing asset processing SourceMapDevToolPlugin main.2a314cd6.iframe.bundle.js generated SourceMap
 <s> [webpack.Progress] 92% sealing asset processing SourceMapDevToolPlugin runtime~main.80bf0248.iframe.bundle.js generate SourceMap
 <s> [webpack.Progress] 92% sealing asset processing SourceMapDevToolPlugin runtime~main.80bf0248.iframe.bundle.js generated SourceMap
 <s> [webpack.Progress] 92% sealing asset processing SourceMapDevToolPlugin 701.ac3818f6.iframe.bundle.js generate SourceMap
@@ -334,8 +325,8 @@ info => Manager built (1.7 min)
 <s> [webpack.Progress] 92% sealing asset processing RealContentHashPlugin 229.584acd13.iframe.bundle.js generated SourceMap
 <s> [webpack.Progress] 92% sealing asset processing RealContentHashPlugin 935.9e007eb7.iframe.bundle.js generate SourceMap
 <s> [webpack.Progress] 92% sealing asset processing RealContentHashPlugin 935.9e007eb7.iframe.bundle.js generated SourceMap
-<s> [webpack.Progress] 92% sealing asset processing RealContentHashPlugin main.25fe38f8.iframe.bundle.js generate SourceMap
-<s> [webpack.Progress] 92% sealing asset processing RealContentHashPlugin main.25fe38f8.iframe.bundle.js generated SourceMap
+<s> [webpack.Progress] 92% sealing asset processing RealContentHashPlugin main.562b03fb.iframe.bundle.js generate SourceMap
+<s> [webpack.Progress] 92% sealing asset processing RealContentHashPlugin main.562b03fb.iframe.bundle.js generated SourceMap
 <s> [webpack.Progress] 92% sealing asset processing RealContentHashPlugin 273.975d951a.iframe.bundle.js generate SourceMap
 <s> [webpack.Progress] 92% sealing asset processing RealContentHashPlugin 273.975d951a.iframe.bundle.js generated SourceMap
 <s> [webpack.Progress] 92% sealing asset processing RealContentHashPlugin 115.439faea5.iframe.bundle.js generate SourceMap
@@ -373,7 +364,7 @@ info => Manager built (1.7 min)
 <s> [webpack.Progress] 99% cache begin idle
 <s> [webpack.Progress] 100% 
 
-info => Preview built (2.23 min)
+info => Preview built (2.22 min)
 WARN asset size limit: The following asset(s) exceed the recommended size limit (244 KiB).
 WARN This can impact web performance.
 WARN Assets: 
@@ -386,10 +377,10 @@ WARN Entrypoints:
 WARN   main (2.92 MiB)
 WARN       runtime~main.d397cf9f.iframe.bundle.js
 WARN       860.d9fb5251.iframe.bundle.js
-WARN       main.25fe38f8.iframe.bundle.js
+WARN       main.562b03fb.iframe.bundle.js
 WARN 
 <s> [webpack.Progress] 99% cache shutdown
 <s> [webpack.Progress] 99% cache shutdown
 <s> [webpack.Progress] 100% 
 
-info => Output directory: C:\\Users\\qosin\\AppData\\Local\\Temp\\chromatic--99644-tM9cG3tgmbFG
+info => Output directory: C:\\Users\\qosin\\AppData\\Local\\Temp\\chromatic--144052-WTfGYh4ms5Og

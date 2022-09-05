@@ -7,6 +7,7 @@ module.exports = {
     "../components/**/*.stories.mdx",
     "../components/**/*.stories.@(js|jsx|ts|tsx)"
   ],
+  "staticDirs": ['../public'],
   "webpackFinal": async (config) => {
     config.resolve.plugins = [
       ...(config.resolve.plugins || []),

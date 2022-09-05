@@ -1,6 +1,7 @@
 import React from "react";
-import { render, screen } from "@testing-library/react";
 import { userEvent } from "@storybook/testing-library";
+
+import { render, screen } from "@/test-utils";
 
 import { Button } from "./Button";
 

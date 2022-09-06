@@ -1,4 +1,3 @@
-import React from "react";
 import { userEvent } from "@storybook/testing-library";
 
 import { render, screen } from "@/test-utils";

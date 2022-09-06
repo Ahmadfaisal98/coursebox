@@ -3,13 +3,16 @@ import styled from "@emotion/styled";
 import { css, SerializedStyles } from "@emotion/react";
 
 import { AppTheme } from "@/styles/themes";
-import { boxShadow, transition } from "../styles";
+import { boxShadow, transition, borderRadius } from "@/components/styles";
 
 export type Color = "primary" | "secondary" | "danger" | "warning";
 
 export type Props = {
+  /** Text in the button */
   children: string;
+  /** Button color */
   color?: Color;
+  /** Click handler */
   onClick: (event: MouseEvent<HTMLButtonElement>) => void;
 };
 
@@ -46,7 +49,7 @@ export const Button = styled.button<Props>`
   font-size: 1.6rem;
   width: 15rem;
   height: 4rem;
-  border-radius: 1rem;
+  ${borderRadius}
   ${transition()}
   ${({ color, theme }) => getColors(theme, color)};
   ${({ theme }) =>

@@ -1,39 +1,42 @@
 import { FC, ChangeEvent, useRef } from "react";
 import styled from "@emotion/styled";
 
-import { boxShadow, transition } from "../styles";
 import { useId } from "@/hooks/useId";
+import { boxShadow, transition } from "../styles";
 
 const Wrapper = styled.label`
-  font-size: 1.8rem;
   & input {
     display: none;
   }
   & input:checked {
     & ~ label {
-      ${({ theme }) =>
-        boxShadow(theme.components.shadow1, theme.components.shadow2, true)}
-      color: ${({ theme }) => theme.font.regular};
+      background-color: ${({ theme }) => theme.components.primary};
+      &::after {
+        margin-left: 3.5rem;
+        background-color: ${({ theme }) => theme.components.active};
+      }
     }
   }
 `;
 
 const VisiblePart = styled.label`
-  display: inline-block;
-  user-select: none;
+  display: flex;
+  align-items: center;
   cursor: pointer;
-  text-align: center;
-  border-radius: 0.5rem;
-  width: 2.5rem;
-  height: 2.5rem;
-  color: rgba(0, 0, 0, 0);
+  height: 3rem;
+  width: 6rem;
+  border-radius: 1.6rem;
   background-color: ${({ theme }) => theme.components.background};
   ${({ theme }) =>
     boxShadow(theme.components.shadow1, theme.components.shadow2)}
-  ${transition()}
-  &:hover {
-    ${({ theme }) =>
-      boxShadow(theme.components.shadow1, theme.components.shadow2, true)}
+  &::after {
+    content: "";
+    margin-left: 0.5rem;
+    width: 2.1rem;
+    height: 2.1rem;
+    border-radius: 50%;
+    background-color: ${({ theme }) => theme.components.nonActive};
+    ${transition()}
   }
 `;
 
@@ -42,13 +45,13 @@ type Props = {
   onChange: (event: ChangeEvent<HTMLInputElement>) => void;
 };
 
-export const Checkbox: FC<Props> = ({ onChange }) => {
+export const Switch: FC<Props> = ({ onChange }) => {
   const fieldId = useId();
 
   return (
     <Wrapper>
       <input id={fieldId} type="checkbox" onChange={onChange} />
-      <VisiblePart htmlFor={fieldId}>✔</VisiblePart>
+      <VisiblePart htmlFor={fieldId} data-testid="SwitchVisiblePart" />
     </Wrapper>
   );
 };

@@ -3,21 +3,30 @@
 exports[`Layout test cases Render check 1`] = `
 <DocumentFragment>
   <div
-    class="css-9q9p2w"
+    class="css-u0jlnf"
   >
     <a
-      class="css-8q5j4o"
+      class="css-1oh0t5x"
       href="/"
     >
       <header
-        class="css-1he53g1"
+        class="css-rq0vky"
         size="3"
       >
-        C8X
+        <span
+          class="logo_short"
+        >
+          C8X
+        </span>
+        <span
+          class="logo_full"
+        >
+          CoursesBox
+        </span>
       </header>
     </a>
     <nav
-      class="css-gfwwxb"
+      class="css-kkkasr"
     >
       <a
         href="/all"

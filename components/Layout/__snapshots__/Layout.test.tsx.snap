@@ -6,7 +6,7 @@ exports[`Layout test cases Render check 1`] = `
     class="css-9q9p2w"
   >
     <a
-      class="css-1vuc8b5"
+      class="css-8q5j4o"
       href="/"
     >
       <header
@@ -95,7 +95,7 @@ exports[`Layout test cases Render check 1`] = `
     <footer
       class="css-1y0dtms"
     >
-      © 2022 NickOvchinnikov. All rights reserved.
+      © 2022 Ahmad Faisal. All rights reserved.
     </footer>
   </div>
 </DocumentFragment>

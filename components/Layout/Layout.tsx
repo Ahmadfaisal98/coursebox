@@ -5,6 +5,7 @@ import styled from "@emotion/styled";
 import { Logo } from "@/components/Logo";
 import { Input } from "@/components/Input";
 import { IconButton } from "@/components/IconButton";
+import { StyledLink } from "@/components/StyledLink";
 
 const Wrapper = styled.div`
   display: grid;
@@ -52,14 +53,6 @@ const StyledLogo = styled(Logo)`
   }
 `;
 
-const LogoLink = styled.a`
-  all: unset;
-  cursor: pointer;
-  &:hover {
-    opacity: 0.9;
-  }
-`;
-
 const MainNav = styled.nav`
   grid-area: nav;
   display: flex;
@@ -95,16 +88,16 @@ const Footer = styled.footer`
 `;
 
 type Props = {
-  isDark: Boolean;
+  isDark: boolean;
   onThemeToggle: () => void;
 };
 
-export const Layout: FC<Props> = ({ children, onThemeToggle, isDark }) => (
+export const Layout: FC<Props> = ({ children, isDark, onThemeToggle }) => (
   <Wrapper>
     <Link href="/" passHref>
-      <LogoLink>
+      <StyledLink>
         <StyledLogo size={3}>C8X</StyledLogo>
-      </LogoLink>
+      </StyledLink>
     </Link>
     <MainNav>
       <Link href="/all">All</Link>
@@ -118,7 +111,7 @@ export const Layout: FC<Props> = ({ children, onThemeToggle, isDark }) => (
     <SearchInput icon="Search" placeholder="Search" onChange={() => null} />
     <Content>{children}</Content>
     <Footer>
-      © {new Date().getFullYear()} NickOvchinnikov. All rights reserved.
+      © {new Date().getFullYear()} Ahmad Faisal. All rights reserved.
     </Footer>
   </Wrapper>
 );

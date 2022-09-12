@@ -24,6 +24,8 @@ const Login: NextPage = () => {
     formState: { errors },
   } = useForm<LoginForm>();
 
+  console.log("errors", errors);
+
   const onSubmit = (data: LoginForm) => {
     console.log(data);
   };
@@ -34,20 +36,35 @@ const Login: NextPage = () => {
           label="Identifier"
           placeholder="username or email"
           feedback={
-            errors.identifier ? <Feedback>Min length 6!</Feedback> : <>&nbsp;</>
+            errors.identifier ? (
+              <Feedback>{errors.identifier?.message}</Feedback>
+            ) : (
+              <>&nbsp;</>
+            )
           }
           height={8}
-          {...register("identifier", { required: true, minLength: 6 })}
+          {...register("identifier", {
+            required: "Required field!",
+            minLength: { value: 6, message: "Min length 6!" },
+          })}
         />
         <StyledInput
           label="Password"
           type="password"
+          role="textbox"
           placeholder="password"
           height={8}
           feedback={
-            errors.password ? <Feedback>Min length 6!</Feedback> : <>&nbsp;</>
+            errors.password ? (
+              <Feedback>{errors.password?.message}</Feedback>
+            ) : (
+              <>&nbsp;</>
+            )
           }
-          {...register("password", { required: true, minLength: 6 })}
+          {...register("password", {
+            required: "Required field!",
+            minLength: { value: 8, message: "Min length 8!" },
+          })}
         />
         <Button type="submit">Sign In</Button>
         <h3>

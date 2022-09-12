@@ -1,5 +1,23 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`Login page Client validation check 1`] = `
+<span
+  class="css-1reg724"
+  role="alert"
+>
+   
+</span>
+`;
+
+exports[`Login page Client validation check 2`] = `
+<span
+  class="css-1reg724"
+  role="alert"
+>
+   
+</span>
+`;
+
 exports[`Login page Render check 1`] = `
 <div>
   <form>
@@ -13,8 +31,8 @@ exports[`Login page Render check 1`] = `
           Login
         </h2>
         <label
-          class="css-bhzw8w"
-          height="7"
+          class="css-10bmm8i"
+          height="8"
           width="20"
         >
           <span
@@ -27,16 +45,20 @@ exports[`Login page Render check 1`] = `
           >
             <input
               class="css-1bj11r8"
+              name="identifier"
               placeholder="username or email"
             />
           </div>
           <span
             class="css-1reg724"
-          />
+            role="alert"
+          >
+             
+          </span>
         </label>
         <label
-          class="css-bhzw8w"
-          height="7"
+          class="css-10bmm8i"
+          height="8"
           width="20"
         >
           <span
@@ -49,13 +71,18 @@ exports[`Login page Render check 1`] = `
           >
             <input
               class="css-1bj11r8"
+              name="password"
               placeholder="password"
+              role="textbox"
               type="password"
             />
           </div>
           <span
             class="css-1reg724"
-          />
+            role="alert"
+          >
+             
+          </span>
         </label>
         <button
           class="css-1tkemmz"

@@ -24,8 +24,6 @@ const Login: NextPage = () => {
     formState: { errors },
   } = useForm<LoginForm>();
 
-  console.log("errors", errors);
-
   const onSubmit = (data: LoginForm) => {
     console.log(data);
   };

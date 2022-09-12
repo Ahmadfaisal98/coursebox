@@ -1,4 +1,5 @@
-import { render } from "@/test-utils";
+import { render, screen, act } from "@/test-utils";
+import userEvent from "@testing-library/user-event";
 
 import { Layout } from "./Layout";
 
@@ -16,12 +17,24 @@ describe("Layout test cases", () => {
   );
 
   it("Render check", () => {
-    const { asFragment } = render(
-      <Layout isDark onThemeToggle={() => undefined}>
-        {child}
-      </Layout>
-    );
+    const { asFragment } = render(<Layout>{child}</Layout>);
 
     expect(asFragment()).toMatchSnapshot();
+  });
+  it("Theme toggle check", async () => {
+    localStorage.setItem("theme", "light");
+    (window.matchMedia as jest.Mock).mockReturnValue({ matches: true });
+
+    render(<Layout>{child}</Layout>);
+
+    const themeToggler = screen.getByRole("button", { name: "Moon" });
+    expect(themeToggler).toBeInTheDocument();
+
+    await act(async () => {
+      userEvent.click(themeToggler);
+    });
+
+    expect(localStorage.getItem("theme")).toBe("dark");
+    expect(screen.getByRole("button", { name: "Sun" })).toBeInTheDocument();
   });
 });

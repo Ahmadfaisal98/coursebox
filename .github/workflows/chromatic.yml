@@ -16,8 +16,8 @@ jobs:
     runs-on: ubuntu-latest
 
     defaults:
-    run:
-      working-directory: ./frontend
+      run:
+        working-directory: ./frontend
     # Job steps
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it

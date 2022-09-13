@@ -12,3 +12,12 @@ export const mockUser = {
     password: "tes123!",
   },
 };
+
+export const ValidationError = {
+  error: {
+    status: 400,
+    name: "ValidationError",
+    message: "Invalid identifier or password",
+    details: {},
+  },
+};

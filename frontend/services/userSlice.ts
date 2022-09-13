@@ -31,13 +31,7 @@ type UserPayload = { jwt: string; user: { username: string; email: string } };
 export const userSlice = createSlice({
   name: "user",
   initialState,
-  reducers: {
-    update: (state, { payload }: PayloadAction<Partial<UserState>>) => ({
-      ...state,
-      ...payload,
-    }),
-    clear: () => initialState,
-  },
+  reducers: {},
   extraReducers: (builder) => {
     builder
       .addCase(login.fulfilled, (state, { payload }) => {
@@ -87,7 +81,10 @@ export const login = createAsyncThunk<UserPayload, LoginData>(
           })
         : await fetch(`${api_url}/auth/local`, {
             method: "POST",
-            headers: { Authorization: `Bearer ${jwt}` },
+            headers: {
+              "Content-Type": "application/json",
+            },
+            body: JSON.stringify(loginData),
           });
 
       const data = await response.json();

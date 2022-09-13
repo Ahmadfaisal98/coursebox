@@ -15,12 +15,6 @@ export type UserState = {
   error?: SerializedError;
 };
 
-export const initialState: UserState = {
-  jwt: "",
-  email: "",
-  username: "",
-};
-
 export type LoginData = {
   identifier?: string;
   password?: string;
@@ -28,11 +22,18 @@ export type LoginData = {
 
 type UserPayload = { jwt: string; user: { username: string; email: string } };
 
+export const initialState: UserState = {
+  jwt: "",
+  username: "",
+  email: "",
+};
+
 export const userSlice = createSlice({
   name: "user",
   initialState,
   reducers: {},
   extraReducers: (builder) => {
+    // Login flow
     builder
       .addCase(login.fulfilled, (state, { payload }) => {
         state.requestState = "fulfilled";
@@ -50,6 +51,9 @@ export const userSlice = createSlice({
         const payloadError = (payload as { error: SerializedError })?.error;
         state.error = payloadError;
       });
+
+    // Logout flow
+    builder.addCase(logout.fulfilled, () => initialState);
   },
 });
 
@@ -63,10 +67,10 @@ const clearUserInfoFromLocalStorage = () => {
   localStorage.removeItem("email");
 };
 
-const setupUserInfoFromLocalStorage = (result: UserPayload) => {
+const setupUserInfoToLocalStorage = (result: UserPayload) => {
   localStorage.setItem("jwt", result.jwt);
-  localStorage.setItem("username", result.user.username);
-  localStorage.setItem("email", result.user.email);
+  localStorage.setItem("username", result?.user?.username);
+  localStorage.setItem("email", result?.user?.email);
 };
 
 export const login = createAsyncThunk<UserPayload, LoginData>(
@@ -74,10 +78,12 @@ export const login = createAsyncThunk<UserPayload, LoginData>(
   async (loginData, { rejectWithValue }) => {
     try {
       const jwt = localStorage.getItem("jwt");
-
       const response = jwt
         ? await fetch(`${api_url}/users/me`, {
-            headers: { Authorization: `Bearer ${jwt}` },
+            method: "GET",
+            headers: {
+              Authorization: `Bearer ${jwt}`,
+            },
           })
         : await fetch(`${api_url}/auth/local`, {
             method: "POST",
@@ -96,12 +102,15 @@ export const login = createAsyncThunk<UserPayload, LoginData>(
 
       const result = (jwt ? { jwt, user: data } : data) as UserPayload;
 
-      setupUserInfoFromLocalStorage(result);
-
+      setupUserInfoToLocalStorage(result);
       return result;
     } catch (error) {
       clearUserInfoFromLocalStorage();
       return rejectWithValue(error);
     }
   }
+);
+
+export const logout = createAsyncThunk("user/logout", async () =>
+  clearUserInfoFromLocalStorage()
 );

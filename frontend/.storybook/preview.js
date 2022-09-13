@@ -1,7 +1,15 @@
 import { ThemeProvider, Global } from "@emotion/react";
+import * as NextImage from "next/image";
 
 import { Themes } from "../styles/themes";
 import { GlobalStyles } from "../styles/global";
+
+const OriginalNextImage = NextImage.default;
+
+Object.defineProperty(NextImage, "default", {
+  configurable: true,
+  value: (props) => <OriginalNextImage {...props} unoptimized />,
+});
 
 const withThemeProvider = (Story, context) => {
   const background =

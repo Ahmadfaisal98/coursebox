@@ -3,7 +3,7 @@
 exports[`Button test cases Render check 1`] = `
 <DocumentFragment>
   <button
-    class="css-1earmej"
+    class="css-1tkemmz"
     color="primary"
   >
     Button

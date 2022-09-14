@@ -35,16 +35,12 @@ export type Props = {
   imageProps: ImageProps;
 };
 
-const loaderProp = ({ src }: ImageLoaderProps) => {
-  return src;
-};
-
 export const Course: FC<Props> = ({ children, header, link, imageProps }) => (
   <Section>
     <Link href={link} passHref>
       <CourseLink>
         <h2>{header}</h2>
-        <Image {...imageProps} alt={header} loader={loaderProp} unoptimized />
+        <Image {...imageProps} alt={header} />
         {children}
       </CourseLink>
     </Link>

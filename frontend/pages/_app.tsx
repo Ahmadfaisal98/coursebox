@@ -1,26 +1,17 @@
-import { useEffect, useState } from "react";
 import type { AppProps } from "next/app";
-import { ThemeProvider } from "@emotion/react";
+import { Provider } from "react-redux";
 
-import { Themes } from "@/styles/themes";
+import { store } from "@/store";
 
 import { Layout } from "@/components/Layout";
 
 function MyApp({ Component, pageProps }: AppProps) {
-  const [isDark, setIsDark] = useState(false);
-  const toggleDark = () => setIsDark(!isDark);
-
-  useEffect(() => {
-    setIsDark(window.matchMedia("prefers-color-scheme: dark").matches);
-  }, []);
-
-  const theme = Themes[isDark ? "dark" : "light"];
   return (
-    <ThemeProvider theme={theme}>
-      <Layout onThemeToggle={toggleDark} isDark={isDark}>
+    <Provider store={store}>
+      <Layout>
         <Component {...pageProps} />
       </Layout>
-    </ThemeProvider>
+    </Provider>
   );
 }
 

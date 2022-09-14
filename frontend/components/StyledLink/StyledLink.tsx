@@ -1,10 +1,15 @@
 import styled from "@emotion/styled";
 
-export const StyledLink = styled.a`
+export type Props = {
+  underline?: boolean;
+};
+
+export const StyledLink = styled.a<Props>`
   all: unset;
   cursor: pointer;
   color: ${({ theme }) => theme.font.regular};
+  text-decoration: ${({ underline }) => (underline ? "underline" : "none")};
   &:hover {
-    opacity: 0.9;
+    opacity: 0.7;
   }
 `;

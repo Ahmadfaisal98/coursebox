@@ -13,7 +13,7 @@ export type Props = {
   /** Button color */
   color?: Color;
   /** Click handler */
-  onClick: (event: MouseEvent<HTMLButtonElement>) => void;
+  onClick?: (event: MouseEvent<HTMLButtonElement>) => void;
 };
 
 export const getColors = (theme: AppTheme, color?: Color): SerializedStyles => {
@@ -49,14 +49,14 @@ export const Button = styled.button<Props>`
   font-size: 1.6rem;
   width: 15rem;
   height: 4rem;
-  ${borderRadius}
-  ${transition()}
-  ${({ color, theme }) => getColors(theme, color)};
-  ${({ theme }) =>
-    boxShadow(theme.components.shadow1, theme.components.shadow2)}
+  ${borderRadius};
+  ${({ theme, color }) => getColors(theme, color)};
   &:hover {
     opacity: 0.9;
   }
+  ${transition()}
+  ${({ theme }) =>
+    boxShadow(theme.components.shadow1, theme.components.shadow2)}
   &:active {
     ${({ theme }) =>
       boxShadow(theme.components.shadow1, theme.components.shadow2, true)}

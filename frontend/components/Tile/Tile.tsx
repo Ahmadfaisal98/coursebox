@@ -1,23 +1,24 @@
-import { FC } from "react";
+import { FC, ReactChild } from "react";
 import styled from "@emotion/styled";
+
 import { boxShadow, borderRadius } from "@/components/styles";
 
-type Props = {
-  /** Header string */
-  header: string;
-};
-
 const Section = styled.section`
-  padding: 1vmin 4vmin 4vmin;
   ${borderRadius};
+  padding: 1vmin 4vmin 4vmin;
+  background: ${({ theme }) => theme.background};
   color: ${({ theme }) => theme.font.regular};
-  background-color: ${({ theme }) => theme.background};
   ${({ theme }) =>
     boxShadow(theme.components.shadow1, theme.components.shadow2)}
 `;
 
-export const Tile: FC<Props> = ({ children, header }) => (
-  <Section>
+export type Props = {
+  /** Header */
+  header: ReactChild;
+};
+
+export const Tile: FC<Props> = ({ header, children, ...rest }) => (
+  <Section {...rest}>
     <h2>{header}</h2>
     {children}
   </Section>

@@ -1,1 +1,2 @@
-export { Tile } from "./Tile";
+export { Tile, type Props } from "./Tile";
+export { CenteredTile } from "./CenteredTile";

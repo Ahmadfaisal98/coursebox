@@ -1,15 +1,15 @@
 export const mockUser = {
-  jwt: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MiwiaWF0IjoxNjYzMDYyNjc1LCJleHAiOjE2NjU2NTQ2NzV9.6_Su5rXd9o8uMRkHC-gAC0aT0dkSD0KoVj2SfEd7Q4I",
+  jwt: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MywiaWF0IjoxNjYzMDgxNzk4LCJleHAiOjE2NjU2NzM3OTh9.MqaTY9NtQmFiU0pxs2oI4yMVGY5nSACr0SVVZurcZz",
   user: {
-    id: 2,
-    username: "John Doe",
-    email: "john@doe.com",
+    id: 3,
+    username: "John Doe 2",
+    email: "john2@doe.com",
     provider: "local",
     confirmed: true,
     blocked: false,
-    createdAt: "2022-09-12T03:46:44.404Z",
-    updatedAt: "2022-09-12T03:46:44.404Z",
-    password: "tes123!",
+    createdAt: "2022-09-13T15:09:58.723Z",
+    updatedAt: "2022-09-13T15:09:58.723Z",
+    password: "tes123456!",
   },
 };
 

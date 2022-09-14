@@ -1,4 +1,4 @@
-import { storeCreator as globalStoreCreator } from "@/store";
+import { configureStore } from "@reduxjs/toolkit";
 
 import { mockUser, RegistrationError, ValidationError } from "@/mocks/user";
 
@@ -10,11 +10,7 @@ import {
   registration,
 } from "./userSlice";
 
-const rootReducer = {
-  user: reducer,
-};
-
-const storeCreator = () => globalStoreCreator(rootReducer);
+const storeCreator = () => configureStore({ reducer: { user: reducer } });
 
 const updatedState = {
   jwt: mockUser.jwt,
@@ -63,7 +59,7 @@ describe("User slice check", () => {
 
       const store = storeCreator();
       // In this case the jwt is already saved in localStorage
-      await store.dispatch(login({}));
+      await store.dispatch(login());
       const state = store.getState();
 
       expect(state).toEqual({

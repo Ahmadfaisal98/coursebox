@@ -17,6 +17,10 @@ module.exports = {
     ];
     return config;
   },
+  env: (config) => ({
+    ...config,
+    NEXT_PUBLIC_STRAPI_URL: "",
+  }),
   addons: [
     "@storybook/addon-links",
     "@storybook/addon-essentials",

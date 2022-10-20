@@ -3,7 +3,11 @@ const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
   images: {
-    domains: ["localhost:1337", "localhost"],
+    domains: [
+      "localhost:1337",
+      "localhost",
+      "next-project-ahmad.herokuapp.com",
+    ],
   },
 };
 

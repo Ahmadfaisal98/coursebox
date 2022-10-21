@@ -4,8 +4,8 @@
 Simple website with authentication (login, register), home page, detail page, search page, dark mode, full responsive. It is built from TypeScript, Next Js, and has CI/CD
 
 ### Technologies Used
-- Frontend: TypeScript, NextJs (With SSG, SSR), Storybook (With UI Test, Chromatic), Jest, Emotion, Redux, vercel
-- Backend: Strapi, postgreSQL, heroku
+- Frontend: TypeScript, NextJs (With SSG, SSR), Storybook (With UI Test, Chromatic), Jest, Emotion, Redux, Vercel
+- Backend: Strapi, PostgreSQL, Heroku
 - CI/CD: Github Actions, Chromatic Deployment, Check Code (With Jest, Eslint), Storybook Publish, UI Tests, Deploy Vercel
 
 #### View: https://coursebox-ahmad.vercel.app/

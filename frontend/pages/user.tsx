@@ -21,6 +21,7 @@ const User: NextPage = () => {
       dispatch(logout());
       router.push("/login");
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   const logoutHandler = () => {

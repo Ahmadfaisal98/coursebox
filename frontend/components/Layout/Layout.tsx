@@ -68,6 +68,7 @@ export const Layout: FC = ({ children }) => {
     if (query && !q) {
       setQuery("");
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [q]);
 
   const theme = Themes[isDark ? "dark" : "light"];

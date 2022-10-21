@@ -112,7 +112,7 @@ const createRequest = (
       body: JSON.stringify(loginData),
     });
   }
-  throw { error: "Invalid login request" };
+  throw new Error("Invalid login request");
 };
 
 export const login = createAsyncThunk<UserPayload, LoginData | undefined>(

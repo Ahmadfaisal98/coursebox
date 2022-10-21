@@ -1,5 +1,4 @@
 import type { NextPage, GetStaticProps } from "next";
-import styled from "@emotion/styled";
 import Head from "next/head";
 
 import { Courses } from "@/components/Course";

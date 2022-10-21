@@ -1,4 +1,4 @@
-import { FC, ChangeEvent, useRef } from "react";
+import { FC, ChangeEvent } from "react";
 import styled from "@emotion/styled";
 
 import { useId } from "@/hooks/useId";

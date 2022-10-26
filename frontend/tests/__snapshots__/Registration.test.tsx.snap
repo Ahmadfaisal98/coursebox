@@ -14,7 +14,11 @@ exports[`Registration page Client validation check 2`] = `
   class="css-1reg724"
   role="alert"
 >
-   
+  <span
+    class="css-sk8pyf"
+  >
+    Invalid email!
+  </span>
 </span>
 `;
 

@@ -4,6 +4,8 @@ import { useRouter } from "next/router";
 import { useSelector, useDispatch } from "react-redux";
 import { useForm } from "react-hook-form";
 import styled from "@emotion/styled";
+import * as yup from "yup";
+import { yupResolver } from "@hookform/resolvers/yup";
 
 import { RootState, AppDispatch } from "@/store";
 import {
@@ -21,12 +23,20 @@ const StyledInput = styled(Input)`
   margin-bottom: 1rem;
 `;
 
+const validationSchema = yup.object().shape({
+  password: yup.string().required("Required field!").min(8, "Min length 8!"),
+  username: yup.string().required("Required field!").min(6, "Min length 6!"),
+  email: yup.string().email("Invalid email!").required("Required field!"),
+});
+
 const Registration: NextPage = () => {
   const {
-    register,
     handleSubmit,
+    register,
     formState: { errors },
-  } = useForm<RegistrationData>();
+  } = useForm<RegistrationData>({
+    resolver: yupResolver(validationSchema),
+  });
   const router = useRouter();
 
   const { jwt, error } = useSelector<RootState, RootState["user"]>(selectUser);
@@ -47,6 +57,7 @@ const Registration: NextPage = () => {
           <ConditionalFeedback>{error?.message}</ConditionalFeedback>
         </h3>
         <StyledInput
+          {...register("username")}
           label="username"
           placeholder="username"
           feedback={
@@ -54,14 +65,6 @@ const Registration: NextPage = () => {
               {errors.username?.message}
             </ConditionalFeedback>
           }
-          {...register("username", {
-            required: "Required field!",
-            minLength: { value: 6, message: "Min length 6!" },
-            pattern: {
-              value: /^[\w\d\s]+$/,
-              message: "Only letters, numbers and spaces!",
-            },
-          })}
         />
         <StyledInput
           label="email"
@@ -70,28 +73,19 @@ const Registration: NextPage = () => {
           }
           placeholder="email"
           type="email"
-          {...register("email", {
-            required: "Required field!",
-            pattern: {
-              value: /^\S+@\S+$/,
-              message: "Invalid email!",
-            },
-          })}
+          {...register("email")}
         />
         <StyledInput
           label="password"
           type="password"
           role="textbox"
+          placeholder="password"
+          {...register("password")}
           feedback={
             <ConditionalFeedback>
               {errors.password?.message}
             </ConditionalFeedback>
           }
-          placeholder="password"
-          {...register("password", {
-            required: "Required field!",
-            minLength: { value: 8, message: "Min length 8!" },
-          })}
         />
         <Button type="submit">Sign Up</Button>
         <h3>

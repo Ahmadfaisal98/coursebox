@@ -64,18 +64,6 @@ describe("Registration page", () => {
       );
     });
 
-    expect(
-      screen.getByText("Only letters, numbers and spaces!")
-    ).toBeInTheDocument();
-
-    await act(async () => {
-      const usernameInput = screen.getByRole("textbox", {
-        name: "username Only letters, numbers and spaces!",
-      });
-      userEvent.clear(usernameInput);
-      userEvent.type(usernameInput, "testtesttest");
-    });
-
     const alerts = screen.getAllByRole("alert");
 
     expect(alerts).toHaveLength(3);

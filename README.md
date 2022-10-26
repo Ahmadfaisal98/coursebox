@@ -6,6 +6,6 @@ Simple website with authentication (login, register), home page, detail page, se
 ### Technologies Used
 - Frontend: TypeScript, NextJs (With SSG, SSR), Storybook (With UI Test, Chromatic), Jest, Emotion, Redux, Vercel
 - Backend: Strapi, PostgreSQL, Heroku
-- CI/CD: Github Actions, Chromatic Deployment, Check Code (With Jest, Eslint), Storybook Publish, UI Tests, Deploy Vercel
+- CI/CD: Github Actions, Chromatic Deployment, Check Code (With Jest, Eslint), Storybook Publish, UI Tests, Deploy Vercel, Sonar Code Analysis
 
 #### View: https://coursebox-ahmad.vercel.app/

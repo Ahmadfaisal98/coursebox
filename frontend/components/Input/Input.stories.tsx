@@ -13,7 +13,6 @@ export default {
 export const PrimaryInput: ComponentStoryObj<typeof Input> = {
   play: async ({ args }) => {
     await userEvent.type(screen.getByRole("textbox"), "String");
-    // await expect(args.onChange).toHaveBeenCalledTimes(6);
   },
   args: {
     placeholder: "Your name",

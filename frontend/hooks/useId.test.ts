@@ -5,7 +5,7 @@ import { useId } from "./useId";
 describe("useId check", () => {
   it("Id check", () => {
     const { result } = renderHook(useId);
-    expect(result.current).toMatch(/(\w|\d){13}/);
+    expect(result.current).toMatch(/(\w|\d){20}/);
   });
   it("Generated unique id per render", () => {
     const { result: res1 } = renderHook(useId);

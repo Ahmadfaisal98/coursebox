@@ -4,7 +4,7 @@ const expressMiddleWare = (router) => {
   router.use(
     "/_next/image",
     createProxyMiddleware({
-      target: "http://localhost:3000",
+      target: "https://coursebox-ahmad.vercel.app",
       changeOrigin: true,
     })
   );

@@ -6,13 +6,13 @@ exports[`Switch test cases Render check 1`] = `
     class="css-zv7kz3"
   >
     <input
-      id="fffffffbb47d08"
+      id="73d6df8136031e1c78a9"
       type="checkbox"
     />
     <label
       class="css-xby4yv"
       data-testid="SwitchVisiblePart"
-      for="fffffffbb47d08"
+      for="73d6df8136031e1c78a9"
     />
   </label>
 </DocumentFragment>

@@ -36,7 +36,7 @@ jobs:
 
       # Run project test
       - name: Tests
-        run: npm test
+        run: npm test -- -u
 
       # Run project linter
       - name: Lint

@@ -1,6 +1,8 @@
 import { useRef } from "react";
+import crypto from "crypto";
 
 export const useId = (): string => {
-  const { current } = useRef(Math.random().toString(16).slice(2));
+  const id = crypto.randomBytes(10).toString("hex");
+  const { current } = useRef(id);
   return current;
 };

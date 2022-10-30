@@ -8,4 +8,8 @@ Simple website with authentication (login, register), home page, detail page, se
 - Backend: Strapi, PostgreSQL, Heroku
 - CI/CD: Github Actions, Chromatic Deployment, Check Code (With Jest, Eslint), Storybook Publish, UI Tests, Deploy Vercel, Sonar Code Analysis
 
-#### View: https://coursebox-ahmad.vercel.app/
+### Links 
+- [Web](https://coursebox-ahmad.vercel.app/)
+- [Sonar-check](https://sonarcloud.io/summary/overall?id=Ahmadfaisal98_coursebox)
+- [Storybook](https://63162231c41e0fd82718a836-gwvicmaquy.chromatic.com/?path=/story/pages-404--error-404-page) 
+- [Chromatic](https://www.chromatic.com/build?appId=63162231c41e0fd82718a836&number=42)

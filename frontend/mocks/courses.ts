@@ -53,7 +53,7 @@ export const response = {
                   width: 750,
                   height: 397,
                   size: 258.93,
-                  url: "/covers/udemy.png",
+                  url: "https://res.cloudinary.com/dyrzlsi0q/image/upload/v1667190431/medium_udemy_87853c54bd.png",
                 },
               },
               hash: "1_Ufos_Uy_Zg_OE_97ntx_N_Vu_BF_Eg_b6f5b24b69",
@@ -112,7 +112,7 @@ export const response = {
                   width: 750,
                   height: 394,
                   size: 44.42,
-                  url: "/covers/coursera.png",
+                  url: "https://res.cloudinary.com/dyrzlsi0q/image/upload/v1667190383/medium_coursera_ebc7aeaab8.png",
                 },
                 large: {
                   name: "large_0*ZX6r5B6opiJXY_cJ.png",

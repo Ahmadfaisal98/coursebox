@@ -16,26 +16,21 @@ export const BasicCourse: ComponentStoryObj<typeof Course> = {
     await expect(screen.getByRole("link")).toBeInTheDocument();
   },
   args: {
-    header: "Hands-On React. Build advanced React JS Frontend with expert",
-    link: "/hands-on-reactjs",
+    header: "Udemy",
+    link: "/udemy",
     imageProps: {
       width: 1368,
       height: 770,
-      alt: "Logo for Hands-On React. Build advanced React JS Frontend with expert",
-      src: "/covers/hands-on_reactjs_cover.png",
+      alt: "Udemy",
+      src: "https://res.cloudinary.com/dyrzlsi0q/image/upload/v1667190431/medium_udemy_87853c54bd.png",
     },
     children: (
       <>
-        React is the most popular library for building frontend web
-        applications. Step-by-step by diving into all the basics, I&apos;ll
-        introduce you to advanced concepts as well. We&apos;ll build the
-        minesweeper application from scratch We&apos;ll build the minesweeper
-        application from scratch:
-        <ul>
-          <li>setup of the development environment</li>
-          <li>configuration of the React JS app</li>
-          <li>basic algorithms of Minesweeper</li>
-        </ul>
+        Udemy is a massive open online course provider, and its learning
+        experience arranges coursework into a series of modules and lessons that
+        can include videos, text notes and assessment tests. Udemy video player
+        has functional features like closed captioning and note-taking
+        functions.
       </>
     ),
   },

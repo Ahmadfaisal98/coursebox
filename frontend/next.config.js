@@ -7,6 +7,7 @@ const nextConfig = {
       "localhost:1337",
       "localhost",
       "next-project-ahmad.herokuapp.com",
+      "res.cloudinary.com",
     ],
   },
 };

@@ -120,7 +120,7 @@ const CoursePage: NextPage<{
             <Image
               layout="fill"
               alt={`Cover for ${header}`}
-              src={`${strapi_url}${url}`}
+              src={`${url}`}
               objectFit="contain"
             />
           </ImageContainer>

@@ -87,7 +87,7 @@ export const Courses: FC<{ courses: CourseType[]; strapi_url: string }> = ({
             width,
             height,
             alt: `Cover for ${header}`,
-            src: `${strapi_url}${url}`,
+            src: `${url}`,
           }}
         >
           <h3>{subtitle}</h3>

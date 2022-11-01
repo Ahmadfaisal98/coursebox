@@ -11,5 +11,5 @@ Simple website with authentication (login, register), home page, detail page, se
 ### Links 
 - [Web](https://coursebox-ahmad.vercel.app/)
 - [Sonar-check](https://sonarcloud.io/summary/overall?id=Ahmadfaisal98_coursebox)
-- [Storybook](https://63162231c41e0fd82718a836-gwvicmaquy.chromatic.com/?path=/story/pages-404--error-404-page) 
-- [Chromatic](https://www.chromatic.com/build?appId=63162231c41e0fd82718a836&number=42)
+- [Storybook](https://63162231c41e0fd82718a836-xjcfdrjhgd.chromatic.com/?path=/story/pages-home--home-page) 
+- [Chromatic](https://www.chromatic.com/build?appId=63162231c41e0fd82718a836&number=60)

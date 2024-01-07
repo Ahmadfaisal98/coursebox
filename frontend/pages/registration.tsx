@@ -78,6 +78,7 @@ const Registration: NextPage = () => {
         <StyledInput
           label="password"
           type="password"
+          role="textbox"
           placeholder="password"
           {...register("password")}
           feedback={

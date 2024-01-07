@@ -65,7 +65,6 @@ const Login: NextPage = () => {
           label="Password"
           type="password"
           placeholder="password"
-          role="textbox"
           feedback={
             <ConditionalFeedback>
               {errors.password?.message}

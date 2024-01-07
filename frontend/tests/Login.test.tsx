@@ -75,14 +75,8 @@ describe("Login page", () => {
     const submitButton = screen.getByRole("button", { name: "Sign In" });
 
     act(() => {
-      userEvent.type(
-        screen.getByRole("textbox", { name: "Identifier" }),
-        "test@test.test"
-      );
-      userEvent.type(
-        screen.getByRole("textbox", { name: "Password" }),
-        "testpassworddd!"
-      );
+      userEvent.type(screen.getByLabelText("Identifier"), "test@test.test");
+      userEvent.type(screen.getByLabelText("Password"), "testpassworddd!");
       userEvent.click(submitButton);
     });
 
@@ -103,14 +97,8 @@ describe("Login page", () => {
     const submitButton = screen.getByRole("button", { name: "Sign In" });
 
     act(() => {
-      userEvent.type(
-        screen.getByRole("textbox", { name: "Identifier" }),
-        mockUser.user.email
-      );
-      userEvent.type(
-        screen.getByRole("textbox", { name: "Password" }),
-        mockUser.user.password
-      );
+      userEvent.type(screen.getByLabelText("Identifier"), mockUser.user.email);
+      userEvent.type(screen.getByLabelText("Password"), mockUser.user.password);
       userEvent.click(submitButton);
     });
 
